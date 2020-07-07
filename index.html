@@ -26,20 +26,27 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-sm navigation-clean">
-        <div class="container"><a class="navbar-brand text-center" href="#"><img id="logo" src="assets/img/brand-logo.png"><br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand text-center" href="index.html"><img id="logo" src="assets/img/brand-logo.png"><br></a>
+            <!-- Button for contact info -->
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link text-center" href="tel:+16195555555"><i class="fa fa-phone"></i>&nbsp;Call us Today!<br>619-297-6104</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-center" href="#"><i class="fa fa-map-marker"></i>&nbsp;Visit Us<br>1442 University Ave.<br>San Diego, CA 92103</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-center" href="tel:+16192976104"><i class="fa fa-phone"></i>&nbsp;Call us Today!<br>619-297-6104</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-center" href="http://maps.google.com/?q=1142 University Ave, San Diego, California, 92103"><i class="fa fa-map-marker"></i>&nbsp;Visit Us<br>1442 University Ave.<br>San Diego, CA 92103</a></li>
                     <li class="nav-item" role="presentation"></li>
                 </ul>
         </div>
         </div>
     </nav>
+
+    <!-- Main navbar with services -->
     <nav class="navbar navbar-dark navbar-expand-md bg-primary navigation-clean">
-        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">SERVICES&nbsp;</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">COSMETIC DENTISTRY</a><a class="dropdown-item" role="presentation" href="#">VENEER TREATMENT</a><a class="dropdown-item" role="presentation" href="#">TEETH WHITENING</a><a class="dropdown-item"
@@ -47,7 +54,7 @@
                                 role="presentation" href="#">RESTORATIVE DENTISTRY</a><a class="dropdown-item" role="presentation" href="#">ROOYT CANAL</a><a class="dropdown-item" role="presentation" href="#">TMJ TREATMENT</a><a class="dropdown-item" role="presentation"
                                 href="#">ORAL SURGERY</a></div>
                     </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">SHOWCASE</a>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">GALLERY</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">SMILE GALLERY</a><a class="dropdown-item" role="presentation" href="#">PATIENT TESTIMONIALS</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">PATIENT INFO&nbsp;</a>
@@ -68,6 +75,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <!-- covid anchor link -->
                     <p class="covid-message">Keeping our patients safe, click <a href="#">here</a> for our COVID-19 prevention protocol.</p>
                 </div>
             </div>
@@ -75,7 +83,16 @@
     </section>
 
     <!-- Loop hero video -->
-    <div class="vid-section">
+    <!-- Replaces video on smaller screens -->
+    <section class="welcome">
+        <div class="container text-center py-4 d-md-none border border-danger">
+            <h1 class="welcome-primary border-bottom border-danger pb-2">Welcome to Rancho Dental Group</h1>
+            <h2 class="welcome-secondary">Giving San Diego a reason to smile.</h2>
+        </div>
+    </section>
+
+    <!-- video and text on medium size screen -->
+    <div class="vid-section d-none d-sm-block">
         <div class="video-container">
             <div class="color-overlay"></div>
             <video id="videoBG" autoplay muted loop>
@@ -91,7 +108,7 @@
     <div class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" data-aos="fade-right" data-aos-once="true"><img class="img-fluid" src="assets/img/big-smile.jpg"></div>
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true"><img class="img-fluid pb-md-2" src="assets/img/big-smile.jpg"></div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-once="true" id="img-text">
                     <p class="text-left">At Rancho Dental Group, we strive to provide high-quality dental care in a warm, comfortable environment. Our San Diego dental practice is built on a foundation of trust amongst our staff, doctor, and patients because we understand
                         that it isn’t always easy to feel comfortable at the dentist. We are dedicated to giving our patients the stellar care they need while helping them feel safe, positive, and relaxed.<br></p>
@@ -102,13 +119,18 @@
             </div>
         </div>
     </div>
+
+    <!-- New patient deal -->
     <div class="highlight-phone section" style="background-position: center;background-size: cover;background-repeat: no-repeat;">
         <div class="container">
             <div class="row">
                 <div class="col-md-8" data-aos="fade-right" data-aos-once="true">
                     <div class="intro">
                         <h2 class="display-4">NEW PATIENT<br>ONLINE SPECIAL</h2>
-                        <p><strong>Free</strong>&nbsp;Take-Home Teeth Whitening when you have a Full Exam, X-rays and Cleaning ($450 value)</p><a class="btn btn-primary" role="button" href="#">CALL NOW!</a></div>
+                        <p><strong>Free</strong>&nbsp;Take-Home Teeth Whitening when you have a Full Exam, X-rays and Cleaning ($450 value)</p>
+                        <!-- call to action button -->
+                        <a class="btn btn-primary" role="button" href="tel:+16192976104">CALL NOW!</a>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="d-none d-md-block iphone-mockup"></div>
@@ -153,96 +175,189 @@
             </div>
         </div>
     </div>
+
+    <!-- Top 3 Services and links -->
     <div class="services section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="text-center" id="cosmetic-heading">COSMETIC DENTISTRY</h2>
-                    <p>Maybe you feel that your smile is dull or lackluster. You no longer need to be disappointed in your grin. At Rancho Dental Group, we can help! We have a full line of cosmetic dental services available, including Invisalign (invisible
+                    <p>Maybe you feel that your smile is lackluster. You no longer need to be disappointed in your grin. At Rancho Dental Group, we can help! We have a full line of cosmetic dental services available, including Invisalign (invisible
                         braces), tooth whitening, dental implants, dental crowns and more. With our superb cosmetic dentistry services, we can help you attain your ideal smile!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-4 cosmetic-services" data-aos="fade-right" data-aos-once="true">
-                    <h3>TEETH<br>WHITENING<br><a class="services-link link" href="#">Learn More&nbsp;<i class="fa fa-angle-right"></i></a><br></h3>
+                    <h3>TEETH<br>WHITENING<br>
+                        <!-- NEEDS PAGE [Delete this once page is setup] -->
+                        <a class="services-link link" href="#">Learn More&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </h3>
                 </div>
                 <div class="col-sm-6 col-md-4 cosmetic-services" data-aos="fade-up" data-aos-once="true">
-                    <h3>DENTAL<br>IMPLANTS<br><a class="services-link link" href="#">Learn More&nbsp;<i class="fa fa-angle-right"></i></a><br></h3>
+                    <h3>DENTAL<br>IMPLANTS<br>
+                        <!-- NEEDS PAGE [Delete this once page is setup] -->
+                        <a class="services-link link" href="#">Learn More&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </h3>
                 </div>
                 <div class="col-md-4 cosmetic-services" data-aos="fade-left" data-aos-once="true">
-                    <h3>FAMILY<br>DENTISTRY<br><a class="services-link link" href="#">Learn More&nbsp;<i class="fa fa-angle-right"></i></a></h3>
+                    <h3>FAMILY<br>DENTISTRY<br>
+                        <!-- NEEDS PAGE [Delete this once page is setup] -->
+                        <a class="services-link link" href="#">Learn More&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </h3>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- FORM section and code for formspree -->
     <div class="container" id="info-container">
         <div class="row">
             <div class="col-md-12" id="contact-heading">
                 <h2 class="text-center text-info section">CONTACT US</h2>
             </div>
-            <div class="col-12 col-sm-6 col-md-6" id="contact-box" style="background-position: center;background-size: cover;background-repeat: no-repeat;opacity: 1;filter: blur(0px) grayscale(0%);background-image: url(&quot;assets/img/female-dentist-working.jpg&quot;);">
-                <p id="contact-text" style="opacity: 1;">San Jose Dentists Dr. Stephen Beveridge and Dr. Erin Beveridge Cabuling welcome you to Beveridge Dental. We pride ourselves in providing an environment that is comfortable, caring, and comprehensive. Our patients love our fabulous services
-                    such as restorative and cosmetic dentistry, dental implants, and family dentistry. We are dedicated to giving you the smile of your dreams! For our neighbors in South San Jose, including the communities of Cambrian Park, Campbell,
-                    Cupertino, Los Gatos, Robertsville, Saratoga, and Santa Clara, California, and zip codes 95118 and 95124 and all the surrounding areas, we look forward to serving you. </p>
-                <div class="info-box"><i class="fa fa-map-marker my-info-icons"></i><span class="text-uppercase text-info">Address: </span><span>1442 University Ave, San Diego, CA 92103</span></div>
-                <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">Email: </span><span>contact@ensignhospital.org </span></div>
-                <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span>(619) 297-6104</span></div>
+            <div class="col-12 col-sm-6 col-md-6" id="contact-box" style="background-position: center;background-size: cover;background-repeat: no-repeat;">
+                <p class="lead" id="contact-text">Dr. Mark Richey and the dental staff welcome you to Rancho Dental Group. We pride ourselves in providing an environment that is comfortable, caring, and comprehensive. Our patients love our services
+                    such as restorative and cosmetic dentistry, dental implants, and family dentistry. We are dedicated to giving you the smile of your dreams! For our neighbors in San Diego, including the communities of Chula Vista, Hillcrest,
+                    La Mesa, El Cajon, Spring Valley, La Jolla, and all the surrounding areas, we look forward to serving you. </p>
+                <div class="info-box">
+                    <i class="fa fa-map-marker my-info-icons"></i>
+                    <span class="text-uppercase text-info">Address: </span>
+                    <span>1442 University Ave, San Diego, CA 92103</span>
+                </div>
+                <div class="info-box">
+                    <i class="fa fa-envelope my-info-icons"></i>
+                    <span class="text-uppercase text-info">Email: </span>
+                    <span>ranchodentalstaff@yahoo.com </span>
+                </div>
+                <div class="info-box">
+                    <i class="fa fa-phone-square my-info-icons"></i>
+                    <span class="text-uppercase text-info">Phone: </span>
+                    <span>(619) 297-6104</span>
+                </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6 site-form">
-                <form id="my-form">
-                    <div class="form-group"><label class="sr-only" for="firstname">First Name</label><input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name"></div>
-                    <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name"></div>
-                    <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label><input class="form-control" type="tel" id="phonenumber" name="phonenumber" required="" placeholder="Phone"></div>
-                    <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" id="email" name="email" required="" placeholder="Email"></div>
-                    <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" name="messages" required="" placeholder="Message" rows="8"></textarea></div><button class="btn btn-light btn-lg" id="form-btn" type="submit">SEND </button></form>
+                <!-- FORM is using Fromspree.io Validate each email adress -->
+                <form action="https://formspree.io/mjvaaena" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label class="sr-only" for="firstname">First Name</label>
+                        <input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="lastname">Last Name</label>
+                        <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="phonenumber">Phone Number</label>
+                        <input class="form-control" type="tel" id="phonenumber" name="phonenumber" required placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email Address</label>
+                        <input class="form-control" type="text" id="email" name="_replyto" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="messages">Message</label>
+                        <textarea class="form-control" name="messages" required placeholder="Message" rows="8"></textarea>
+                    </div>
+                    <button class="btn btn-light btn-lg" id="form-btn" type="submit">SEND</button>
+                </form>
+                <!-- FORM ends -->
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
+
+    <!-- ad footer -->
     <section id="top-footer">
         <div class="row">
             <div class="col text-center"><img class="img-fluid" src="assets/img/blue-bar-image.png" alt="Crest + Oral B | The Smile Generation - Providing generations of healthy smiles"></div>
         </div>
     </section>
+    <!-- dark footer and links -->
     <div class="footer-clean section">
         <footer>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
                         <h3>CONTACT</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-building"></i>&nbsp;Rancho Dental Group</a></li>
-                            <li><a href="#"><i class="fa fa-map"></i>&nbsp;1442 University Ave<br>San Diego, CA 92103<br></a></li>
-                            <li><a href="#"><i class="fa fa-phone"></i>&nbsp;(619) 297-6104</a></li>
+                        <ul class="business-info">
+                            <li><a><i class="fa fa-building"></i>&nbsp;Rancho Dental Group</a></li>
+                            <li><a href="http://maps.google.com/?q=1142 University Ave, San Diego, California, 92103"><i class="fa fa-map"></i>&nbsp;1442 University Ave<br>San Diego, CA 92103<br></a></li>
+                            <li><a href="tel:+16192976104"><i class="fa fa-phone"></i>&nbsp;(619) 297-6104</a></li>
+                            <!-- NEEDS PAGE [Delete this once page is setup] -->
                             <li><a href="#"><i class="fa fa-clock-o"></i>&nbsp;Book an Appointment</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;Send a Message</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>HOURS</h3>
                         <ul>
-                            <li><a href="#">MO 9:00 AM - 5:00 PM<br>TU 9:00 AM - 5:00 PM<br>WE 9:00 AM - 5:00 PM<br>TH 10:00 AM - 5:00 PM<br>FR 9:00 AM - 5:00 PM<br>SAT - Closed<br>SUN - Closed<br></a></li>
+                            <li>
+                                MO 9:00 AM - 5:00 PM
+                                <br>
+                                TU 9:00 AM - 5:00 PM
+                                <br>
+                                WE 9:00 AM - 5:00 PM
+                                <br>
+                                TH 10:00 AM - 5:00 PM
+                                <br>
+                                FR 9:00 AM - 5:00 PM
+                                <br>
+                                SAT - Closed
+                                <br>
+                                SUN - Closed
+                                <br>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>INFORMATION</h3>
                         <ul>
+                            <!-- NEEDS PAGE [Delete this once page is setup] -->
                             <li><a href="#">Notice of Privacy Practices</a></li>
+                            <!-- NEEDS PAGE [Delete this once page is setup] -->
                             <li><a href="#">Privacy Policy</a></li>
+                            <!-- NEEDS PAGE [Delete this once page is setup] -->
                             <li><a href="#">Notice of Teledentistry Practices</a></li>
+                            <!-- NEEDS PAGE [Delete this once page is setup] -->
                             <li><a href="#">Terms of Use</a></li>
+                            <!-- NEEDS PAGE [Delete this once page is setup] -->
                             <li><a href="#">Notice of Non-Discrimination</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/MarkRicheyDDS"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://doctor.webmd.com/doctor/mark-richey-edbf9911-74be-470c-9220-6418b127b304-overview"><i class="icon ion-medkit"></i></a>
-                        <a
-                            href="https://www.instagram.com/drrichey_/"><i class="icon ion-social-instagram"></i></a>
-                            <p class="copyright">© Copyright 2020 Rancho Dental Group&nbsp; | Dr. Mark Richey | Website by - US ARMY Veteran davidsoto.dev</p>
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/MarkRicheyDDS">
+                            <i class="icon ion-social-facebook"></i>
+                        </a>
+                        <!-- NEEDS PAGE [Delete this once page is setup] -->
+                        <a href="#">
+                            <i class="icon ion-social-twitter"></i>
+                        </a>
+                        <a href="https://doctor.webmd.com/doctor/mark-richey-edbf9911-74be-470c-9220-6418b127b304-overview">
+                            <i class="icon ion-medkit"></i>
+                        </a>
+                        <a href="https://www.instagram.com/drrichey_/">
+                            <i class="icon ion-social-instagram"></i>
+                        </a>
+                            <p class="copyright">
+                                © Copyright 2020 Rancho Dental Group&nbsp; | Dr. Mark Richey | Website by - US ARMY Veteran davidsoto.dev
+                            </p>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+
+    <!-- script for the form -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        window.formbutton = window.formbutton || function(){
+            (formbutton.q=formbutton.q||[]).push(arguments)
+        };
+
+        formbutton("create", {action: "https://formspree.io/mjvaaena"})
+    </script>
+    <!-- end of FORM script -->
+
+    <!-- needed javascrip files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
